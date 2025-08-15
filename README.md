@@ -1,9 +1,9 @@
-# 💰 Personal Finance Tracker
+# 📚 E-Library Management System
 
 ## 📌 Overview
-A **command-line personal finance tracker** to record income, expenses, and savings goals.  
-Built as a **Data Structures** project using arrays of structures (Python lists of dictionaries).  
-Supports **sorting, searching, filtering, file storage**, and even **ASCII bar charts** for monthly spending.
+A command-line digital library management system to manage book inventory, borrowing, and returning.
+Built as a Data Structures project using linked lists for inventory and stacks for undo operations.
+Supports search, sorting, file storage, and double confirmation before deleting books.
 
 ---
 
@@ -12,30 +12,43 @@ Add new books to the library
 
 View all available books
 
-Search books by title or author
+Search books by ID, Author or Title.
 
 Borrow and return books
 
 Undo last borrow/return action
 
-Sort books by title or author
 
-Save & load library data from file
 ---
 
 ## 📂 Data Structures Used
-- **Array of structures** → List of dictionaries in Python
-- **Sorting** → Custom sort by date
-- **Searching** → Linear search with keyword match
-- **Filtering** → Conditional filtering with list comprehension
+Language: C++ 
+
+Data Structures Used: Linked List, Stack
+
 
 ---
+📌 How It Works
 
+Admin adds books to the library inventory.
+
+Users search or browse available books.
+
+Borrowing or returning updates the linked list and pushes the action to the stack.
+
+The undo feature pops from the stack and restores the previous state.
+
+
+---
 ## 🚀 How to Run
-```bash
-# Clone repository
-git clone https://github.com/your-username/personal-finance-tracker.git
-cd personal-finance-tracker/src
 
-# Run the program
-python finance_tracker.py
+```bash
+#Clone the repository
+git clone https://github.com/your-username/e-library-management.git
+cd e-library-management/src
+
+#Compile the C++ program
+g++ elibrary.cpp -o elibrary
+
+#Run the executable
+./elibrary
